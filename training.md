@@ -31,3 +31,53 @@ MEVN Mongo Express Vue Node
 
 VBScript
 JScript
+
+
+# REPL - Read Evaluate Print Loop
+
+
+# Node Global Variables
+- Console
+- Process
+- Global
+- Buffer
+- Timers (setTimeout(), setInterval(), clearInterval(), setImmediate())
+- __dirname, __filename
+
+# Client side JS
+document.getElementById()
+window.alert()
+alert() | prompt() | confirm()
+
+
+
+# ES2015 / ES6+ features
+- Arrow Functions
+- Destructuring
+- Spread / Rest Operator
+- Template Literal
+- Block Scope Variable
+- Short hand property
+- Default Parameter
+- Classes
+- Modules
+- Map / Set
+
+
+
+
+# Node Installer
+- Node Core/Native Modules
+- Node runtime Environment (NRE)
+- Node Package Manager (NPM)
+
+
+
+# Module System
+- AMD
+- SystemJS
+- RequireJS
+- ES6 Module : import Statement / export keyword
+- CommonJS Module System
+    : to export - module.exports variable
+    : to import - require()

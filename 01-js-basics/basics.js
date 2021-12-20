@@ -143,3 +143,10 @@ for(let prop in user){
     console.log(prop)
 }
 
+
+
+console.log("Started")
+setTimeout(()=>{
+    console.log("Running..")
+}, 3000)
+console.log("Ended")
