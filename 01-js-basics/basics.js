@@ -90,26 +90,26 @@
 // - Instance : implements object inheritance
 //  __proto__
 
-var Shoe = {
-    size : 8
-}
+// var Shoe = {
+//     size : 8
+// }
 
 
 
-var magicShoe = Object.create(Shoe);
+// var magicShoe = Object.create(Shoe);
 
-console.log(Shoe.isPrototypeOf(magicShoe))
-console.log(magicShoe.isPrototypeOf(Shoe))
+// console.log(Shoe.isPrototypeOf(magicShoe))
+// console.log(magicShoe.isPrototypeOf(Shoe))
 
-console.log(Object.prototype.isPrototypeOf(Shoe))
-console.log(Object.prototype.isPrototypeOf(magicShoe))
+// console.log(Object.prototype.isPrototypeOf(Shoe))
+// console.log(Object.prototype.isPrototypeOf(magicShoe))
 
 
-var username = new String("Foo");
+// var username = new String("Foo");
 
-console.log("STRING : ", Object.prototype.isPrototypeOf(username))
+// console.log("STRING : ", Object.prototype.isPrototypeOf(username))
 
-console.log(typeof(username))
+// console.log(typeof(username))
 
 
 
@@ -133,3 +133,13 @@ console.log(typeof(username))
 // console.log(str.length);        
 // console.log(str.constructor);
   
+
+var user = {
+    name : "Foo",
+    age : 32
+}
+
+for(let prop in user){
+    console.log(prop)
+}
+
