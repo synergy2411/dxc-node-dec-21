@@ -27,5 +27,10 @@ app.get("/expenses", (req, res) => {
     res.send(expenses);
 })
 
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname+'/public/index.html')
+})
+
 // http://localhost:9000
 app.listen(9000, () => console.log("Server started at PORT : 9000"))
