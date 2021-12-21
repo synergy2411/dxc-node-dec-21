@@ -87,3 +87,8 @@ alert() | prompt() | confirm()
 - NodeJS ecosystems (NPM, npm commands, package.json, events, streams)
 - Express (REST API)
 - MongoDB / Mongoose (ORM)
+
+
+# Generating the package.json file
+> npm init
+> npm i chalk@4 yargs@latest
