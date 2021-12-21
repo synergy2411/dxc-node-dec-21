@@ -104,3 +104,15 @@ alert() | prompt() | confirm()
 > npm publish
 > npm outdated
 > npm update
+
+
+# REST API (REpresentational State Transfer)
+- GET           /expenses       - returns all expenses
+- POST          /expenses       - create new expenses
+- GET           /expenses/:id   - returns one expense based upon ID
+- PATCH         /expenses/:id   - update the exisitng expenses based upon the ID
+- DELETE        /expenses/:id   - delete one expense based upon ID
+
+
+> npm i nodemon -g
+> nodemon index.js

@@ -1,0 +1,14 @@
+{
+  "name": "05-express-basics",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "SumitK",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "uuid": "^8.3.2"
+  }
+}
