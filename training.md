@@ -92,3 +92,15 @@ alert() | prompt() | confirm()
 # Generating the package.json file
 > npm init
 > npm i chalk@4 yargs@latest
+
+# Useful NPM Commands :
+> npm init [-y]
+> npm install chalk
+> npm install typescript [-D] / [-g]
+> npm uninstall chalk
+> npm ls [-g] [--depth 0]
+> npm config set
+> npm adduser
+> npm publish
+> npm outdated
+> npm update
