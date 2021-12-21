@@ -81,3 +81,9 @@ alert() | prompt() | confirm()
 - CommonJS Module System
     : to export - module.exports variable
     : to import - require()
+
+
+
+- NodeJS ecosystems (NPM, npm commands, package.json, events, streams)
+- Express (REST API)
+- MongoDB / Mongoose (ORM)
