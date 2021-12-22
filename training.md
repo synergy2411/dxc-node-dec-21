@@ -124,7 +124,7 @@ alert() | prompt() | confirm()
 
 - Express (REST API)
 - MongoDB (Mongoose)
-- Template Engine (SSR)
+- Template/View Engine (Server Side Rendering)
 - JWT (Authentication)
 - Testing (Mocha, Chai)
 

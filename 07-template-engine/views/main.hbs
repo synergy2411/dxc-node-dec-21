@@ -1,0 +1,16 @@
+{{>header}}
+
+<h1>Hello from Main File</h1>
+
+<ul>
+    {{#each posts}}
+    <li>
+        <blockquote>{{this.title}} written by {{this.author}}</blockquote>
+        {{#if this.comment}}
+            {{#each this.comment}}
+                {{this}}
+            {{/each}}
+        {{/if}}
+    </li>
+    {{/each}}
+</ul>
