@@ -142,3 +142,10 @@ alert() | prompt() | confirm()
 
 - npm init -y
 - npm install express mongoose
+
+
+# Mongo SRV
+mongodb+srv://scott:MrIXpBuTz4KbkeVj@cluster0.e9xsq.mongodb.net/dxcDB?retryWrites=true&w=majority
+
+Password - MrIXpBuTz4KbkeVj
+User - scott

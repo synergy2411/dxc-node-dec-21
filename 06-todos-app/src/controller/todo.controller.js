@@ -10,10 +10,33 @@ const getAllTodos = (req, res) => {
             return res.send(err)
         })
 }
-const getSingleTodo = (req, res) => {}
-const createTodo = (req, res) => {}
-const updateTodo = (req, res) => {}
-const deleteTodo = (req, res) => {}
+const getSingleTodo = (req, res) => {
+    const {id} = req.params;
+    TodoModel.findById(id)
+        .then(result => res.send(result))
+        .catch(err => res.send(err))
+}
+const createTodo = (req, res) => {
+    const newTodo = new TodoModel(req.body);
+    newTodo.save().then(result => {
+        return res.send(result)
+    }).catch(err=>{
+        console.log(err);
+        return res.send(err)
+    })
+}
+const updateTodo = (req, res) => {
+    const {id} = req.params;
+    TodoModel.findByIdAndUpdate(id,req.body)
+        .then(result=>res.send(result))
+        .catch(err=>res.send(err))
+}
+const deleteTodo = (req, res) => {
+    const { id } = req.params;
+    TodoModel.findByIdAndDelete(id)
+        .then(result => res.send(result))
+        .catch(err => res.send(err))
+}
 
 
 module.exports = {
