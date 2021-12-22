@@ -138,3 +138,7 @@ alert() | prompt() | confirm()
 - db.createCollection("todos")
 - db.todos.insertOne({label : "to buy new jeans", status : false})
 - db.todos.find()
+
+
+- npm init -y
+- npm install express mongoose

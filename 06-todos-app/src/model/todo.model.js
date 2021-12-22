@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-require("../db");
+// require("../db");
 
 const todoSchema = new Schema({
     label : {
@@ -14,13 +14,15 @@ const todoSchema = new Schema({
 
 const TodoModel = model("Todos", todoSchema);
 
-// Create
-const newTodo = new TodoModel({label : "Second Label", status : false})
-newTodo.save()
-    .then(result => console.log(result))
-    .catch(err => console.log(err))
+module.exports = { TodoModel }
 
-// READ
-TodoModel.find().then(documents =>{
-    console.log(documents)
-} ).catch(err => console.log(err))
+// Create
+// const newTodo = new TodoModel({label : "Second Label", status : false})
+// newTodo.save()
+//     .then(result => console.log(result))
+//     .catch(err => console.log(err))
+
+// // READ
+// TodoModel.find().then(documents =>{
+//     console.log(documents)
+// } ).catch(err => console.log(err))
