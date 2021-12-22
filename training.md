@@ -130,3 +130,11 @@ alert() | prompt() | confirm()
 
 - Deployment (AWS/Heroku)
 - Microservices
+
+
+# Mongo Commands
+- show dbs
+- use dxcDB
+- db.createCollection("todos")
+- db.todos.insertOne({label : "to buy new jeans", status : false})
+- db.todos.find()
