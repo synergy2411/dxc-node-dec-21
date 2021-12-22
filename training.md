@@ -83,6 +83,9 @@ alert() | prompt() | confirm()
     : to import - require()
 
 
+- NPM
+- NRE
+- Core Module
 
 - NodeJS ecosystems (NPM, npm commands, package.json, events, streams)
 - Express (REST API)
@@ -116,3 +119,14 @@ alert() | prompt() | confirm()
 
 > npm i nodemon -g
 > nodemon index.js
+
+
+
+- Express (REST API)
+- MongoDB (Mongoose)
+- Template Engine (SSR)
+- JWT (Authentication)
+- Testing (Mocha, Chai)
+
+- Deployment (AWS/Heroku)
+- Microservices
