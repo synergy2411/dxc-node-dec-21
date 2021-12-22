@@ -1,22 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <h2>Hello from Client side</h2>
     <button id="btnFetch">Fetch</button>
+    <hr>
+    <form>
+        <label for="title">Title : </label>
+        <input type="text" name="title" id="title">
+        <br>
+        <label for="amount">Amount</label>
+        <input type="number" name="amount" id="amount">
+        <br>
+        <label for="createdAt">CreatedAt : </label>
+        <input type="date" name="createdAt" id="createdAt">
+        <br>
+        <button type="button" id="btnAddExpense">Add New Expense</button>
+
+    </form>
+    <hr>
+    <ul id="list-group"></ul>
+
     <script>
-        const btnFetch = document.getElementById("btnFetch")
-        btnFetch.addEventListener("click", event => {
+        window.onload = function(){
+            const ul = document.getElementById("list-group")
+            const title = document.getElementById("title")
+            const amount = document.getElementById("amount")
+            const createdAt = document.getElementById("createdAt")
+            const btnAddExpense = document.getElementById("btnAddExpense")
+
+            btnAddExpense.addEventListener("click", event => {
+                event.preventDefault();
+                console.log("Clicked")
+                fetch("http://localhost:9000/expenses", {
+                    method : "POST",
+                    body : JSON.stringify({
+                        title : title.value,
+                        amount : amount.value,
+                        createdAt : createdAt.value
+                    }),
+                    headers : {
+                        'Content-Type' : "application/json"
+                    }
+                })
+                .then(response => response.json())
+                .then(result => {
+                    console.log(result)
+                }).catch(err => console.log("ERROR - ", err))
+            })
+
             fetch("http://localhost:9000/expenses")
                 .then(response => response.json())
-                .then(expenses => console.log(expenses))
+                .then(expenses => {
+                    expenses.forEach(exp => {
+                        const li = document.createElement("li")
+                        li.innerHTML = `
+                            <h4>${exp.title} - ${exp.amount}</h4>
+                            <p>CreateAt :  ${exp.createdAt}</p>
+                        `
+                        ul.appendChild(li)
+                    })
+                })
                 .catch(err => console.log(err))
-        })
+        }
+        
+        
     </script>
 </body>
 </html>
