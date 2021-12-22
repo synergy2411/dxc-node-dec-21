@@ -125,11 +125,12 @@ alert() | prompt() | confirm()
 - Express (REST API)
 - MongoDB (Mongoose)
 - Template/View Engine (Server Side Rendering)
-- JWT (Authentication)
-- Testing (Mocha, Chai)
+- JSON Web Token (Authentication)
 
-- Deployment (AWS/Heroku)
-- Microservices
+- Testing (Mocha, Chai) 1Hr
+- Deployment (AWS/Heroku) 1Hr
+- Microservices 3Hrs
+- PM2
 
 
 # Mongo Commands
