@@ -158,3 +158,14 @@ User - scott
 : it() => write the test
 
 - AAA Pattern (Arrange, Act, Assert)
+
+# Heroku Deployment
+- Signup on Heroku
+- Commit code to github
+- download heroku from Heroku DevCenter
+- heroku login
+- heroku keys:add 
+    : > ssh-keygen (on Powershell with Admin rights)
+- heroku create todos-heroku-dxc
+- git remote (origin / heroku)
+- git push heroku main
