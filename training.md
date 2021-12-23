@@ -169,3 +169,23 @@ User - scott
 - heroku create todos-heroku-dxc
 - git remote (origin / heroku)
 - git push heroku main
+
+
+Microservices
+
+Monorepos
+
+> npm install lerna -g
+> lerna init 
+
+- npx lerna init --independent
+
+
+# PM2 - Process Manager 
+- npm install pm2 -g
+- pm2 ecosystem
+- pm2 start all
+- pm2 stop all
+- pm2 delete all
+- pm2 monit
+- pm2 logs
