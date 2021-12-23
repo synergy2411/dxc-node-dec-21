@@ -151,3 +151,10 @@ User - scott
 - Deployment (AWS/Heroku) 1Hr
 - Microservices 3Hrs
 - PM2
+
+# Testing Library
+- Mocha > npm install mocha -g
+: describe() => Test Suite -> Multiple Tests as well as mutliple Suits
+: it() => write the test
+
+- AAA Pattern (Arrange, Act, Assert)

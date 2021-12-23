@@ -53,6 +53,8 @@ describe("Todo App Suit", () => {
                 })
         })
   })
+//  DELETE
+//  PATCH
 });
 
 // describe("Simple Test Suite", () => {
