@@ -127,11 +127,6 @@ alert() | prompt() | confirm()
 - Template/View Engine (Server Side Rendering)
 - JSON Web Token (Authentication)
 
-- Testing (Mocha, Chai) 1Hr
-- Deployment (AWS/Heroku) 1Hr
-- Microservices 3Hrs
-- PM2
-
 
 # Mongo Commands
 - show dbs
@@ -150,3 +145,9 @@ mongodb+srv://scott:MrIXpBuTz4KbkeVj@cluster0.e9xsq.mongodb.net/dxcDB?retryWrite
 
 Password - MrIXpBuTz4KbkeVj
 User - scott
+
+
+- Testing (Mocha, Chai) 1Hr
+- Deployment (AWS/Heroku) 1Hr
+- Microservices 3Hrs
+- PM2
